@@ -1,4 +1,4 @@
-# 🧪 Curso Introductorio de Testing con Selenium + Java
+## 🧪 Curso Introductorio de Testing con Selenium + Java
 
 ¡Bienvenido al repositorio oficial del **Curso Introductorio de Testing Automatizado**!  
 
@@ -9,7 +9,7 @@ En los **próximos commits**, verás cómo **evoluciona el proyecto** y también
 
 ---
 
-## 🚀 ¿Qué contiene este proyecto?
+### 🚀 ¿Qué contiene este proyecto?
 - **Lenguaje:** Java 24  
 - **Framework de pruebas:** JUnit 4  
 - **Automatización:** Selenium WebDriver  
@@ -17,23 +17,25 @@ En los **próximos commits**, verás cómo **evoluciona el proyecto** y también
 
 ---
 
-## 📂 Estructura del proyecto
+### 📂 Estructura del proyecto
+```
 selenium-intro/
 ├── src/test/java/LoginTest.java # Primer test básico
 ├── pom.xml # Configuración Maven
 ├── .gitignore # Ignora archivos innecesarios
 └── README.md # Bienvenida y guía del curso
+```
 
 ---
 
-## 🏁 Primer objetivo
+### 🏁 Primer objetivo
 - Comprender cómo iniciar un proyecto Maven.  
 - Escribir y ejecutar un test básico con Selenium.  
 - Aprender el flujo fundamental: **setup → acción → aserción → teardown**.  
 
 ---
 
-## ▶️ ¿Cómo ejecutar?
+### ▶️ ¿Cómo ejecutar?
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/TU_USUARIO/selenium-intro.git
@@ -48,7 +50,7 @@ selenium-intro/
 
 ---
 
-📌 Próximos pasos
+### 📌 Próximos pasos
 Integrar el Page Object Model (POM).
 
 Añadir reportes automáticos (Allure).
@@ -57,8 +59,14 @@ Incorporar pruebas de API con Rest Assured.
 
 Preparar el proyecto para ejecución en pipelines CI/CD.
 
-✨ Autor
+---
+
+### ✨ Autor
 Ing. Sergio Pace
 QA Automation Technical Lead & Instructor
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sígueme-blue)](https://www.linkedin.com/in/sergio-pace)
+
+---
 
 Nota: Este repositorio está diseñado para fines educativos como parte del Curso Introductorio de Testing Automatizado. Cada commit documenta la evolución del proyecto para que puedas seguir su crecimiento desde un simple script hasta un framework profesional.

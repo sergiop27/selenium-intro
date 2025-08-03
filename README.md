@@ -50,14 +50,25 @@ selenium-intro/
 
 ---
 
-### 📌 Próximos pasos
-Integrar el Page Object Model (POM).
+### 🕒 Esperas en Selenium
 
-Añadir reportes automáticos (Allure).
+En esta etapa agregamos ejemplos de **diferentes tipos de esperas** para entender cómo afectan el flujo de nuestros tests:
 
-Incorporar pruebas de API con Rest Assured.
+- **Esperas implícitas:**  
+  Configuramos un tiempo global de espera para que Selenium intente encontrar los elementos antes de fallar.
+  ```java
+   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-Preparar el proyecto para ejecución en pipelines CI/CD.
+- **Esperas explícitas:**  
+  Usamos WebDriverWait y ExpectedConditions para esperar condiciones específicas (por ejemplo, que un elemento sea visible).
+  ```java
+   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+   wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("inventory_list")));
+
+- **Sleep (Thread.sleep):**  
+  Forzamos pausas fijas en la ejecución. No se recomienda en producción, pero puede ser útil para depurar.
+  ```java
+   Thread.sleep(5000);
 
 ---
 
@@ -65,7 +76,7 @@ Preparar el proyecto para ejecución en pipelines CI/CD.
 Ing. Sergio Pace
 QA Automation Technical Lead & Instructor
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sígueme-blue)](https://www.linkedin.com/in/sergio-pace)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sígueme-blue)](https://www.linkedin.com/in/pace-sergio/)
 
 ---
 
